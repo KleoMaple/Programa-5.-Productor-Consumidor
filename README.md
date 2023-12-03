@@ -1,21 +1,44 @@
 # Productor-Consumidor_JS
-Requerimientos del programa:
-1. Existen un solo productor y un solo consumidor.
-1. Se cuenta con un “contenedor” con capacidad para 20 elementos, en el cual el productor colocará y el consumidor retirará elementos.
-1. El “contenedor”, lógicamente es un buffer circular y acotado, es decir al llegar a la última casilla (20) comenzará nuevamente en la casilla 1.
-1. El producto puede ser: números, caracteres especiales, letras, etc.
-1. Solo puede ingresar uno a la vez al contenedor.
-1. Para que el Productor pueda entrar, debe haber espacio en el contenedor.
-1. Para que el Consumidor pueda entrar, debe existir producto.
-1. En la pantalla debe aparecer:
-    - El contenedor con los espacios claramente marcados y numerados.
-    - La información del productor, es decir, mostrar si está dormido, trabajando, cuando intente ingresar al contenedor, etc.
-    - La información del consumidor, dormido, trabajando, cuando intente ingresar, etc.
-    - Mensajes que indiquen en todo momento, quien está trabajando, o quien intenta trabajar, o si está dormido.
-1. Deben manejarse tiempos aleatorios para dormir al productor y al consumidor.
-1. Al “despertar” intentará producir y/o consumir respectivamente, verificando que pueda hacerlo según sus condiciones.
-1. Al entrar al buffer podrán producir y/o consumir de tres a seis elementos en cada entrada.
-1. El productor colocará elementos en orden, comenzando con la primera casilla y continuando en la casilla donde quedo.
-1. El consumidor quitará elementos en orden, comenzando también por la primera casilla y continuando en donde quedo la última entrada.
-1. Cuando el productor y/o el consumidor lleguen a la casilla 20, irán de nuevo a la 1 y continuarán produciendo y/o consumiendo respectivamente.
-1. El programa terminara cuando se presione la tecla “ESC”.
+## Requerimientos
+
+1. **Productor y Consumidor Únicos:**
+   - Existe un solo productor y consumidor.
+
+2. **Contenedor:**
+   - Capacidad para 20 elementos.
+   - Buffer circular y acotado: Al llegar a la casilla 20, comienza nuevamente en la casilla 1.
+
+3. **Elementos del Producto:**
+   - Pueden ser números, caracteres especiales, letras, etc.
+
+4. **Operaciones Exclusivas:**
+   - Solo puede ingresar uno a la vez al contenedor.
+
+5. **Condiciones de Ingreso:**
+   - Productor: Debe haber espacio en el contenedor.
+   - Consumidor: Debe existir producto.
+
+6. **Visualización en Pantalla:**
+   a. Contenedor con espacios numerados.
+   b. Información del Productor:
+      - Estado: Dormido, trabajando, intentando ingresar, etc.
+   c. Información del Consumidor:
+      - Estado: Dormido, trabajando, intentando ingresar, etc.
+   d. Mensajes indicando quién está trabajando, intentando trabajar o si está dormido.
+
+7. **Manejo de Tiempos Aleatorios:**
+   - Para dormir al productor y al consumidor.
+
+8. **Producción/Consumo de Elementos:**
+   - Al "despertar", intentarán producir y/o consumir según sus condiciones.
+   - Pueden producir y/o consumir de 4 a 7 elementos en cada entrada.
+
+9. **Orden de Entrada en Buffer:**
+   - Productor: Colocará elementos en orden, comenzando por la primera casilla y continuando donde quedó.
+   - Consumidor: Quitará elementos en orden, comenzando también por la primera casilla y continuando donde quedó la última entrada.
+
+10. **Circulación en el Buffer:**
+    - Al llegar a la casilla 20, irán de nuevo a la 1 y continuarán produciendo y/o consumiendo.
+
+11. **Fin del Programa:**
+    - Se presiona la tecla "ESC".
